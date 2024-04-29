@@ -1,0 +1,16 @@
+cradle:
+  cabal:
+    - path: "haedosa-app/src"
+      component: "lib:haedosa-app"
+
+    - path: "haedosa-app/src/haedosa.hs"
+      component: "haedosa-app:exe:haedosa-app"
+
+    - path: "haedosa-app/test"
+      component: "haedosa-app:test:test-haedosa-app"
+
+    - path: "haedosa-lib/src"
+      component: "lib:haedosa-lib"
+
+    - path: "haedosa-lib/test"
+      component: "haedosa-lib:test:test-haedosa-lib"

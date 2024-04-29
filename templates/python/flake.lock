@@ -1,0 +1,186 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1710146030,
+        "narHash": "sha256-SZ5L6eA7HJ/nmkzGG7/ISclqe6oZdOZTNoesiInkXPQ=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "b1d9ab70662946ef0850d488da1c9019f3a9752a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "haedosa": {
+      "inputs": {
+        "home-manager": "home-manager",
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1714316603,
+        "narHash": "sha256-QDUIx6nexiEh/WZWUmORbevgok/+0iqAI66S4ATHVNY=",
+        "owner": "haedosa",
+        "repo": "flakes",
+        "rev": "d632f3902361d3d6f7b433b2d949319116e7e5ff",
+        "type": "github"
+      },
+      "original": {
+        "owner": "haedosa",
+        "repo": "flakes",
+        "type": "github"
+      }
+    },
+    "haedosa_2": {
+      "inputs": {
+        "home-manager": "home-manager_2",
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1714316603,
+        "narHash": "sha256-QDUIx6nexiEh/WZWUmORbevgok/+0iqAI66S4ATHVNY=",
+        "owner": "haedosa",
+        "repo": "flakes",
+        "rev": "d632f3902361d3d6f7b433b2d949319116e7e5ff",
+        "type": "github"
+      },
+      "original": {
+        "owner": "haedosa",
+        "repo": "flakes",
+        "type": "github"
+      }
+    },
+    "home-manager": {
+      "inputs": {
+        "nixpkgs": [
+          "haedosa",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1714043624,
+        "narHash": "sha256-Xn2r0Jv95TswvPlvamCC46wwNo8ALjRCMBJbGykdhcM=",
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "rev": "86853e31dc1b62c6eeed11c667e8cdd0285d4411",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "ref": "release-23.11",
+        "repo": "home-manager",
+        "type": "github"
+      }
+    },
+    "home-manager_2": {
+      "inputs": {
+        "nixpkgs": [
+          "jupyter-overlay",
+          "haedosa",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1714043624,
+        "narHash": "sha256-Xn2r0Jv95TswvPlvamCC46wwNo8ALjRCMBJbGykdhcM=",
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "rev": "86853e31dc1b62c6eeed11c667e8cdd0285d4411",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "ref": "release-23.11",
+        "repo": "home-manager",
+        "type": "github"
+      }
+    },
+    "jupyter-overlay": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "haedosa": "haedosa_2",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1714375769,
+        "narHash": "sha256-DXq6Dw5hp1IgmgwY8D1HU2p38A2txIYR5PZd+ege6T8=",
+        "owner": "haedosa",
+        "repo": "jupyter-overlay",
+        "rev": "9fa3361bfb25aa547c4d7d8af33b59da436fda84",
+        "type": "github"
+      },
+      "original": {
+        "owner": "haedosa",
+        "repo": "jupyter-overlay",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1714272655,
+        "narHash": "sha256-3/ghIWCve93ngkx5eNPdHIKJP/pMzSr5Wc4rNKE1wOc=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "12430e43bd9b81a6b4e79e64f87c624ade701eaf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-23.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1714272655,
+        "narHash": "sha256-3/ghIWCve93ngkx5eNPdHIKJP/pMzSr5Wc4rNKE1wOc=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "12430e43bd9b81a6b4e79e64f87c624ade701eaf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-23.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "haedosa": "haedosa",
+        "jupyter-overlay": "jupyter-overlay",
+        "nixpkgs": [
+          "haedosa",
+          "nixpkgs"
+        ]
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
