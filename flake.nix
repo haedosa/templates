@@ -23,14 +23,14 @@
 
     templates = {
 
+      python-jupyter = {
+        path = ./templates/python-jupyter;
+        description = "Python Jupyter Template";
+      };
+
       haskell = {
         path = ./templates/haskell;
         description = "Haskell Project Template";
-      };
-
-      python = {
-        path = ./templates/python;
-        description = "Python Project Template";
       };
 
     };
